@@ -9,10 +9,10 @@
         </div>
       </div>
         <form action="{{ url('stock-report') }}" method="POST" files="true" target="blank">
-              {{ csrf_field() }}
+            {{ csrf_field() }}
+                <div style="margin-left: 2%; margin-right: 2%;">
                     <div class="row main">
-                      <div class="col-md-12">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('it_name') ? ' has-error' : '' }}">
                                 <label for="it_name" class="cols-sm-2 control-label">Item Name</label>
                                 <div class="cols-sm-10">
@@ -27,12 +27,12 @@
                                  </div>
                             </div>
                         </div>
-                      </div>  
-                </div>
-                <div class="form-group" style="margin-left: 2%">
-                <input type="submit"  value="Submit" class="btn btn-success">
-              </div>
-            </form>
+                    </div>
+                    <div class="form-group  btn-bot" style="margin-left: 2%">
+                        <input type="submit"  value="Submit" class="btn btn-success">
+                    </div>
+               </div>
+        </form>
     </div>
   </div>
 
@@ -43,10 +43,10 @@
         </div>
       </div>
         <form action="{{ url('stock-reportw') }}" method="POST" files="true" target="blank">
-              {{ csrf_field() }}
+            {{ csrf_field() }}
+                <div style="margin-left: 2%; margin-right: 2%;">
                     <div class="row main">
-                      <div class="col-md-12">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('swp_name') ? ' has-error' : '' }}">
                                 <label for="swp_name" class="cols-sm-2 control-label">Warehouse</label>
                                 <div class="cols-sm-10">
@@ -61,12 +61,12 @@
                                  </div>
                             </div>
                         </div>
-                      </div>  
+                    </div>
+                    <div class="form-group btn-bot">
+                        <input type="submit"  value="Submit" class="btn btn-success">
+                    </div>
                 </div>
-                <div class="form-group" style="margin-left: 2%">
-                <input type="submit"  value="Submit" class="btn btn-success">
-              </div>
-            </form>
+        </form>
     </div>
   </div>
 @endsection

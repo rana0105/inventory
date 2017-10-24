@@ -112,3 +112,95 @@ body {
 ::-moz-placeholder { /* Firefox 18- */
   color: #b1c1d7;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 359px){
+
+    #login-page {
+        background-image: linear-gradient(-90deg, rgba(4, 94, 194, 0.7) 0%, rgba(26, 112, 229, 0.3) 100%), url("image/loginbg.jpg");
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+    .login-form {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        background: #fff;
+        width: 275px;
+        padding: 14px;
+        border-radius: 3px;
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 370px){
+
+    #login-page {
+        background-image: linear-gradient(-90deg, rgba(4, 94, 194, 0.7) 0%, rgba(26, 112, 229, 0.3) 100%), url("image/loginbg.jpg");
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+    .login-form {
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        background: #fff;
+        width: 275px;
+        padding: 14px;
+        border-radius: 3px;
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 380px){
+
+    #login-page {
+        background-image: linear-gradient(-90deg, rgba(4, 94, 194, 0.7) 0%, rgba(26, 112, 229, 0.3) 100%), url("image/loginbg.jpg");
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+    .login-form {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        background: #fff;
+        width: 306px;
+        padding: 14px;
+        border-radius: 3px;
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (min-width: 386px) and (max-width: 500px){
+
+    #login-page {
+        background-image: linear-gradient(-90deg, rgba(4, 94, 194, 0.7) 0%, rgba(26, 112, 229, 0.3) 100%), url("image/loginbg.jpg");
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+    .login-form {
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        background: #fff;
+        width: 306px;
+        padding: 14px;
+        border-radius: 3px;
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    }
+}
