@@ -12,7 +12,7 @@
           {!! Form::model( $payment, ['route' => ['payment.update', $payment->id], 'files' => true, 'method' => 'PUT']) !!}
           {{ csrf_field() }}
           <div class="row main">
-              <div class="col-xs-4 col-sm-4 col-md-4">
+              <div class="col-xs-12 col-sm-10 col-md-4">
                   <div class="form-group">
                       <label for="pay_name" class="cols-sm-2 control-label">Payment Name</label>
                       <div class="col-sm-10">
@@ -21,7 +21,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6">
+              <div class="col-xs-12 col-sm-10 col-md-6">
                 <div class="form-group">
                  {{ Form::label('pay_status','Status *')}} <br/>
                    @if($payment->pay_status == '1')
@@ -34,7 +34,7 @@
                 </div>
               </div>
           </div>
-          <div class="form-group btn-submit">
+          <div class="form-group btn-bot">
               <input type="submit"  value="Update" class="btn btn-success">
               <a href="{{ URL::route('payment.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
           </div>

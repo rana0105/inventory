@@ -1,4 +1,4 @@
-/*start panel section css */
+start panel section css */
 .panel {
     background-color: #fff;
     padding: 1rem;
@@ -64,6 +64,25 @@ a.btn.btn-barcode.btn-lg:hover {
     background-color: #5e6d38;
     border-color: #5e6d38;
 }
+
+@media (min-width: 320px) and (max-width: 736px) { 
+
+    .btn-bot {
+        margin-bottom: 17%;
+    }
+
+    .row-bot {
+        margin-bottom: 15%;
+    }
+
+ }
+
+ @media (min-width: 768px) { 
+    .row-bot {
+        margin-bottom: 5%;
+    }
+
+ }
 
 /*end btn section css */
 
@@ -254,3 +273,101 @@ i.fa.fa-plus {
     color: #ffffff;
 }
 /*end add customer menu css */
+
+/*Start Media Queries CSS*/
+
+ /*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 320px) and (max-width: 1024px) { 
+
+    .col-md-12.res-short>a {
+        margin-bottom: 2%;
+    }
+
+    .panel-body {
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+    }
+
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 321px) and (max-width: 1024px) { 
+
+    .panel.res-graph {
+        height: 250px;
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .panel-body .btn:not(.btn-block) {
+        width: 83px;
+        font-size: 14px;
+        text-align: center;
+        padding: 3%;
+    }
+
+ }
+
+ @media (max-width: 320px) { 
+
+    .panel.res-graph {
+        height: 250px;
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .panel-body .btn:not(.btn-block) {
+        width: 60px;
+        font-size: 10px;
+        text-align: center;
+        padding: 3%;
+    }
+
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) { 
+
+    .panel-body .btn:not(.btn-block) {
+        width: 100px;
+        font-size: 17px;
+        text-align: center;
+        padding: 3%;
+    }
+
+ }
+
+ @media (min-width: 769px) and (max-width: 1024px) { 
+
+    .panel-body .btn:not(.btn-block) {
+        width: 130px;
+        font-size: 22px;
+        text-align: center;
+        padding: 3%;
+    }
+
+ }
+
+ @media (min-width: 1024px) { 
+
+        .panel.res-graph {
+            height: 450px;
+            padding: 15px;
+            margin: auto;
+            text-align: center;
+    }
+
+ }
+
+  @media (min-width: 320px) and (max-width: 375px) { 
+    
+    footer.footer {
+        font-size: 10px;
+    }
+ }
+
+/*End Media Queries CSS

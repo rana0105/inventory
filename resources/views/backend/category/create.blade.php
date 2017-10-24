@@ -11,7 +11,7 @@
                 <form action="{{ route('category.store') }}" method="POST">
 					{{ csrf_field() }}
                     <div class="row main">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('pc_name') ? ' has-error' : '' }}">
                                 <label for="name" class="cols-sm-2 control-label">Parent Category Name</label>
                                 <div class="cols-sm-10">
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group btn-bot">
 						<input type="submit"  value="Submit" class="btn btn-success">
 						<a href="{{ URL::route('category.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
 					</div>

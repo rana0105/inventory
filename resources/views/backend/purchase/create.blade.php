@@ -11,8 +11,8 @@
         <form action="{{ route('purchase.store') }}" method="POST" files="true" target="blank">
               {{ csrf_field() }}
                     <div class="row main">
-                      <div class="col-md-9">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                      <div class="col-md-9 col-sm-9">
+                        <div class="col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('date') ? ' has-error' : '' }}">
                                 <label for="date" class="cols-sm-2 control-label">Date</label>
                                 <div class="cols-sm-10">
@@ -66,8 +66,8 @@
                                 </div>
                             </div>
                         </div> --}}
-                  <div class="form-group">
-                          <div class="col-lg-12 col-sm-12 table-responsive">
+                  {{-- <div class="form-group"> --}}
+                          <div class="col-md-12 col-sm-12 table-responsive">
                              <label for="product" class="cols-sm-2 control-label lef-m">Add Product</label>
                           <table class="table table-bordered">
                             <thead>
@@ -101,10 +101,11 @@
                             </tbody>
                           </table>
                         </div>
-                      </div>
+                      {{-- </div> --}}
                     </div>
-                    <div class="col-md-3 table-responsive">
+                    <div class="col-md-3 col-sm-3">
                     <h5 style="text-align: center;"><b>Total Amount</b></h5>
+                    <div class="table-responsive">
                       <table class="table  table-bordered">
                         <tfoot>
                       <tr>
@@ -129,9 +130,10 @@
                           </tr>
                         </tfoot>
                       </table>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group" style="margin-left: 2%">
+                <div class="form-group btn-bot">
                 <input type="submit"  value="Submit" class="btn btn-success">
                 <a href="{{ URL::route('purchase.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
               </div>

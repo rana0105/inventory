@@ -11,7 +11,7 @@
         <form action="{{ route('stock.store') }}" method="POST">
 					{{ csrf_field() }}
             <div class="row main">
-                <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('item_id') ? ' has-error' : '' }}">
                                 <label for="item_id" class="cols-sm-2 control-label">Item Name</label>
                                 <div class="cols-sm-10">
@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('s_quantity') ? ' has-error' : '' }}">
                                 <label for="s_quantity" class="cols-sm-2 control-label">Quantity</label>
                                 <div class="cols-sm-10">
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('u_price') ? ' has-error' : '' }}">
                                 <label for="u_price" class="cols-sm-2 control-label">Unit Price</label>
                                 <div class="cols-sm-10">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('swp_name') ? ' has-error' : '' }}">
                                 <label for="swp_name" class="cols-sm-2 control-label">Warehouse</label>
                                 <div class="cols-sm-10">
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('swp_shelf') ? ' has-error' : '' }}">
                                 <label for="swp_shelf" class="cols-sm-2 control-label">Shelf Number</label>
                                 <div class="cols-sm-10">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="col-xs-12 col-sm-10 col-md-4">
                             <div class="form-group {{ $errors->has('swp_level') ? ' has-error' : '' }}">
                                 <label for="swp_level" class="cols-sm-2 control-label">Level Number</label>
                                 <div class="cols-sm-10">
@@ -103,7 +103,7 @@
                         </div>
                         
             </div>
-            <div class="form-group btn-submit">
+            <div class="form-group btn-bot">
   						<input type="submit"  value="Submit" class="btn btn-success">
   						<a href="{{ URL::route('stock.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
   					</div>

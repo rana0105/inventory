@@ -16,8 +16,8 @@
         <form action="{{ route('sale.store') }}" method="POST" files="true" target="blank">
               {{ csrf_field() }}
                     <div class="row main">
-                      <div class="col-md-9">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                      <div class="col-md-9 col-sm-8">
+                        <div class="col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('date') ? ' has-error' : '' }}">
                                 <label for="date" class="cols-sm-2 control-label">Date</label>
                                 <div class="cols-sm-10">
@@ -26,7 +26,7 @@
                                  </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-10 col-md-6">
                             <div class="form-group {{ $errors->has('customer') ? ' has-error' : '' }}">
                                 <label for="customer" class="cols-sm-2 control-label">Customer</label>
                                 <label class="cols-sm-2 control-label" style="float: right;"><button type="button" class="btn btn-add" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>Add</button></label>
@@ -43,8 +43,8 @@
                                  </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-lg-12 col-sm-12 table-responsive">
+                        {{-- <div class="form-group"> --}}
+                            <div class="col-md-12 col-sm-12 table-responsive">
                              <label for="product" class="cols-sm-2 control-label lef-m">Add Product</label>
                           <table class="table table-bordered">
                             <thead>
@@ -78,10 +78,11 @@
                             </tbody>
                           </table>
                         </div>
-                      </div>
+                      {{-- </div> --}}
                     </div>
-                    <div class="col-md-3 table-responsive">
-                    <h5 style="text-align: center;"><b>Total Amount</b></h5>
+                    <div class="col-md-3 col-sm-4">
+                    <div class="table-responsive">
+                      <h5 style="text-align: center;"><b>Total Amount</b></h5>
                       <table class="table table-bordered">
                         <tfoot>
                       <tr>
@@ -106,12 +107,14 @@
                           </tr>
                         </tfoot>
                       </table>
+                    </div>
+                    
                   </div>
                 </div>
-                <div class="form-group" style="margin-left: 2%">
-                <input type="submit"  value="Submit" class="btn btn-success">
-                <a href="{{ URL::route('sale.create') }}" class="btn btn-warning btn-responsive">Cancel</a>
-              </div>
+                <div class="form-group btn-bot">
+                  <input type="submit"  value="Submit" class="btn btn-success">
+                  <a href="{{ URL::route('sale.create') }}" class="btn btn-warning btn-responsive">Cancel</a>
+                </div>
             </form>
     </div>
   </div>
@@ -130,7 +133,7 @@
         <form action="{{ url('customerAdd') }}" method="POST">
           {{ csrf_field() }}
             <div class="row main">
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_name') ? ' has-error' : '' }}">
                         <label for="cu_name" class="cols-sm-2 control-label">Customer Name </label>
                         <div class="cols-sm-10">
@@ -139,7 +142,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_phone') ? ' has-error' : '' }}">
                         <label for="cu_phone" class="cols-sm-2 control-label">Customer Phone</label>
                         <div class="cols-sm-10">
@@ -148,7 +151,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_email') ? ' has-error' : '' }}">
                         <label for="cu_email" class="cols-sm-2 control-label">Customer Email</label>
                         <div class="cols-sm-10">
@@ -157,7 +160,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_address') ? ' has-error' : '' }}">
                         <label for="cu_address" class="cols-sm-2 control-label">Customer Address</label>
                         <div class="cols-sm-10">

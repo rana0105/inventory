@@ -5,13 +5,13 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<div class="panel-title">
-					<h3>Update Shelf</h3>
+					<h3>Update Shelf Number</h3>
 				</div>
 			</div>
           {!! Form::model( $shelf, ['route' => ['shelfs.update', $shelf->id], 'files' => true, 'method' => 'PUT']) !!}
           {{ csrf_field() }}
           <div class="row main">
-              <div class="col-xs-6 col-sm-6 col-md-6">
+              <div class="col-xs-12 col-sm-10col-md-6">
                   <div class="form-group">
                       <label for="shelf" class="cols-sm-2 control-label">Shelf Name</label>
                       <div class="cols-sm-10">

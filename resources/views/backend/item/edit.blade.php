@@ -5,13 +5,13 @@
 		<div class="panel">
 			<div class="panel-heading">
 				<div class="panel-title">
-					<h3>Update Sub Category</h3>
+					<h3>Update Item</h3>
 				</div>
 			</div>
           {!! Form::model( $item, ['route' => ['item.update', $item->id], 'files' => true, 'method' => 'PUT']) !!}
           {{ csrf_field() }}
           <div class="row main">
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('it_name') ? ' has-error' : '' }}">
                         <label for="it_name" class="cols-sm-2 control-label">Item Name </label>
                         <div class="cols-sm-10">
@@ -20,7 +20,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('it_barcode') ? ' has-error' : '' }}">
                         <label for="it_barcode" class="cols-sm-2 control-label">Barcode</label>
                         <div class="cols-sm-10">
@@ -29,7 +29,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('itpc_id') ? ' has-error' : '' }}">
                         <label for="itpc_id" class="cols-sm-2 control-label">Parent Category</label>
                         <div class="cols-sm-10">
@@ -38,7 +38,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('itsub_id') ? ' has-error' : '' }}">
                         <label for="itsub_id" class="cols-sm-2 control-label">Sub Category</label>
                         <div class="cols-sm-10">
@@ -47,7 +47,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('it_descrip') ? ' has-error' : '' }}">
                         <label for="it_descrip" class="cols-sm-2 control-label">Description</label>
                         <div class="cols-sm-10">
@@ -56,7 +56,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('it_image') ? ' has-error' : '' }}">
                         <label for="it_image" class="cols-sm-2 control-label">Picture</label>
                         <div class="cols-sm-10">

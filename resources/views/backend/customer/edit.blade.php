@@ -11,7 +11,7 @@
           {!! Form::model( $customer, ['route' => ['customer.update', $customer->id], 'files' => true, 'method' => 'PUT']) !!}
           {{ csrf_field() }}
           <div class="row main">
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_name') ? ' has-error' : '' }}">
                         <label for="cu_name" class="cols-sm-2 control-label">Customer Name </label>
                         <div class="cols-sm-10">
@@ -20,7 +20,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_phone') ? ' has-error' : '' }}">
                         <label for="cu_phone" class="cols-sm-2 control-label">Customer Phone</label>
                         <div class="cols-sm-10">
@@ -29,7 +29,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_email') ? ' has-error' : '' }}">
                         <label for="cu_email" class="cols-sm-2 control-label">Customer Email</label>
                         <div class="cols-sm-10">
@@ -38,7 +38,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('cu_address') ? ' has-error' : '' }}">
                         <label for="cu_address" class="cols-sm-2 control-label">Customer Address</label>
                         <div class="cols-sm-10">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-          <div class="form-group">
+          <div class="form-group btn-bot">
               <input type="submit"  value="Update" class="btn btn-success">
               <a href="{{ URL::route('customer.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
           </div>

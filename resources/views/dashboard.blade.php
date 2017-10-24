@@ -7,10 +7,10 @@
                 <div class="panel-heading">
                     <h3 class="panel-title qush"><b><span class="quick-s sp">Quick</span>&nbsp;<span class="short-q sp">Shortcuts</span></b>
                         </h3>
-                </div></span>
+                </div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 res-short">
                           <a href="/dashboard" class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-list-alt"></span> <br/>Inventory</a>
                           <a href="{{ URL::route('item.index') }}" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> <br/>Items</a>
                           {{-- @can('view_salereport') --}}
@@ -33,23 +33,23 @@
     </div>
     <div class="row" style="margin-bottom: 35px">
       <div class="col-md-12">
-        <div class="panel">
+        <div class="panel res-graph">
           <center>
               {!! $sales->render() !!}
           </center>
          </div>
       </div>
     </div>
-    <div class="row" style="margin-bottom: 35px">
+    <div class="row row-bot">
         <div class="col-md-6">
-          <div class="panel">
+          <div class="panel res-graph">
             <center>
                 {!! $purchases->render() !!}
             </center>
           </div>
        </div>
       <div class="col-md-6">
-        <div class="panel">
+        <div class="panel res-graph">
           <center>
               {!! $stocks->render() !!}
           </center>

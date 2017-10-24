@@ -11,7 +11,7 @@
         <form action="{{ route('warehouse.store') }}" method="POST">
 					{{ csrf_field() }}
             <div class="row main">
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('w_name') ? ' has-error' : '' }}">
                         <label for="w_name" class="cols-sm-2 control-label">Warehouse Name </label>
                         <div class="cols-sm-10">
@@ -20,7 +20,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group {{ $errors->has('w_location') ? ' has-error' : '' }}">
                         <label for="w_location" class="cols-sm-2 control-label">Warehouse Location</label>
                         <div class="cols-sm-10">
@@ -29,7 +29,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-xs-12 col-sm-10 col-md-6">
                     <div class="form-group">
                         <label for="w_status">Status <span class="required">*</span></label>
                         <br />
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group btn-submit">
+            <div class="form-group btn-bot">
   						<input type="submit"  value="Submit" class="btn btn-success">
   						<a href="{{ URL::route('warehouse.index') }}" class="btn btn-warning btn-responsive">Cancel</a>
   					</div>

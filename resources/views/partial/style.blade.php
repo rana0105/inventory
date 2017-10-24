@@ -6,4 +6,4 @@
 {{-- <link rel="stylesheet" href="https://wfolly.firebaseapp.com/node_modules/sweetalert/dist/sweetalert.css">  --}}
 
 {!! Html::style('css/main.css') !!}
-{{-- {!! Html::style('css/app.css') !!} --}}
+{!! Html::style('css/login.css') !!}

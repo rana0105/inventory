@@ -45,8 +45,8 @@ class HomeController extends Controller
       $purchases = Charts::create('line', 'highcharts')
             ->title('Purchase Statistics')
             ->elementLabel('Purchase Statistics')
-            ->dimensions(550, 400)
-            ->responsive(false)
+            // ->dimensions(550, 400)
+            ->responsive(true)
             ->labels($data->pluck('date'))
             ->values($data->pluck('aggregates'));
 
@@ -56,8 +56,8 @@ class HomeController extends Controller
       $sales = Charts::create('bar', 'highcharts')
             ->title('Sale Statistics')
             ->elementLabel('Sale Statistics')
-            ->dimensions(1140, 400)
-            ->responsive(false)
+            // ->dimensions(1140, 400)
+            ->responsive(true)
             ->labels($data->pluck('date'))
             ->values($data->pluck('aggregates'));
 
@@ -66,8 +66,8 @@ class HomeController extends Controller
       $stocks = Charts::create('line', 'highcharts')
                ->title('Stock Statistics')
                ->elementLabel('Stock Statistics')
-               ->dimensions(550, 400)
-               ->responsive(false)
+               // ->dimensions(550, 400)
+               ->responsive(true)
                ->labels($data->pluck('date'))
                ->values($data->pluck('amount'));
 
