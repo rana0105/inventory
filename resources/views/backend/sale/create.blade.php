@@ -43,6 +43,10 @@
                                  </div>
                             </div>
                         </div>
+<<<<<<< HEAD
+=======
+                        {{-- <div class="form-group"> --}}
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
                             <div class="col-md-12 col-sm-12 table-responsive">
                              <label for="product" class="cols-sm-2 control-label lef-m">Add Product</label>
                           <table class="table table-bordered">
@@ -50,11 +54,20 @@
                               <th>Product Type</th>
                               <th>Quantity/Kilo</th>
                               <th>Unit Price</th>
+<<<<<<< HEAD
+=======
+                              {{-- <th>PP Discount</th>
+                              <th>Vat %</th> --}}
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
                               <th>Sub Total</th>
                               <input type="hidden" id="pros" value="{{$data}}">
                           <th style="text-align: center;"><a  class="btn btn-success btn-sm addRows"  href="javascript:void(0)" ><i class="fa fa-plus-square fa-lg" aria-hidden="true"></i></a></th>
                             </thead>
+<<<<<<< HEAD
                             <tbody id="sale-table">
+=======
+                            <tbody>
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
                               <tr>
                                 <td style="width: 230px;">
                                   <select class="livesearch form-control p-check" id="p-id"  name="it_name[]" >
@@ -67,12 +80,21 @@
                                 </td>
                                 <td><input type="text" name="qtn[]" class="form-control qtn qtn-p"></td>
                                 <td><input type="text" name="u_price[]"  class="form-control u_price"></td>
+<<<<<<< HEAD
+=======
+                                {{-- <td><input type="text" name="in_dis[]" class="form-control in_dis"></td>
+                                <td><input type="text" name="vat[]" class="form-control vat"></td> --}}
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
                                 <td><input type="text" name="s_total[]" class="form-control s_total"></td>
                                 <td><a href="javascript:void(0)" class="btn btn-danger btn-sm remove"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a></td>
                               </tr>
                             </tbody>
                           </table>
                         </div>
+<<<<<<< HEAD
+=======
+                      {{-- </div> --}}
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
                     </div>
                     <div class="col-md-3 col-sm-4">
                     <div class="table-responsive">
@@ -166,6 +188,10 @@
             </div>
             <div class="form-group btn-submit">
               <input type="submit"  value="Submit" class="btn btn-success">
+<<<<<<< HEAD
+=======
+              {{-- <a href="{{ URL::route('customer.index') }}" class="btn btn-warning btn-responsive">Cancel</a> --}}
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
             </div>
         </form>
       </div>

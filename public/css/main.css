@@ -370,6 +370,7 @@ i.fa.fa-plus {
     }
  }
 
+<<<<<<< HEAD
 @media (max-width: 500px){
 
     tbody#sale-table .form-control {
@@ -381,4 +382,6 @@ i.fa.fa-plus {
     }
 }
 
+=======
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
 /*End Media Queries CSS

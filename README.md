@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
 # Roles Permissions Laravel (RPL)
 A stater kit with Roles and Permissions implementation on Laravel 5.4
 
@@ -54,6 +57,7 @@ Created by [QCode.in](http://www.qcode.in)
 
 ## License
 
+<<<<<<< HEAD
 [MIT license](http://opensource.org/licenses/MIT).
 =======
 # README #
@@ -86,3 +90,6 @@ This README would normally document whatever steps are necessary to get your app
 * Repo owner or admin
 * Other community or team contact
 >>>>>>> 5e0eec3fd17c7c7fbff41122d025cd44c43b819d
+=======
+[MIT license](http://opensource.org/licenses/MIT).
+>>>>>>> 8d6a549ec17f982689f14a3c424c6d0cf2e006de
